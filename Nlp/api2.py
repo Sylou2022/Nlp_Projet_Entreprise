@@ -14,8 +14,8 @@ import webbrowser
     
 # Fonction pour afficher l'en-tête avec le logo
 def show_header():
-    st.image("../Data/Image/Logo.png", use_column_width=True)
-    st.title("CLASSIFICATION D'AVIS")
+    # st.image("../Data/Image/Logo.png", use_column_width=True)
+    # st.title("CLASSIFICATION D'AVIS")
     
     if st.button("Retour"):
         # Ouvrir l'URL de l'autre application Streamlit dans un nouvel onglet
