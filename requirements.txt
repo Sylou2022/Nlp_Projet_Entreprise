@@ -17,3 +17,4 @@ web-browser==0.0.1
 sqlalchemy==2.0.15
 db==0.1.1
 process-data==0.3
+spacy==3.5.1
