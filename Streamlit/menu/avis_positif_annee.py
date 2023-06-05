@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 def avis_positif_annee():
 
     # Charger les données depuis le fichier CSV
-    df = pd.read_csv('./../../../Data/csv/avi.csv', sep=';')
+    df = pd.read_csv('../Data/csv/avi.csv', sep=';')
 
     # Extraire l'année à partir de la colonne "Date de publication"
     df['Year'] = pd.to_datetime(df['Date de publication'], format='%d/%m/%Y').dt.strftime('%Y')

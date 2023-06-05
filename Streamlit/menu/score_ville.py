@@ -3,7 +3,7 @@ import streamlit as st
 import plotly.graph_objects as go   
     
 def score_ville():
-    datafr = pd.read_csv('./../../../Data/csv/taux_ville.csv', sep=';')
+    datafr = pd.read_csv('../Data/csv/taux_ville.csv', sep=';')
     # Créer une liste des options de sélection pour le dropdown
     villes = datafr['Ville'].unique()
     

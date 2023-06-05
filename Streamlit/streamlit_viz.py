@@ -65,15 +65,15 @@ def main():
     st.markdown(background_css, unsafe_allow_html=True)
   
     data = load_data(2336)  
-    data = pd.read_csv('./../../../Data/csv/Île-de-France_POLE EMPLOI.csv', sep=';')
+    data = pd.read_csv('../Data/csv/Île-de-France_POLE EMPLOI.csv', sep=';')
 
 
     # data = load_data(2336)  
-    data = pd.read_csv('./../../../Data/csv/Île-de-France_POLE EMPLOI.csv', nrows=2336, sep=';')
+    data = pd.read_csv('../Data/csv/Île-de-France_POLE EMPLOI.csv', nrows=2336, sep=';')
     data['Date'] = pd.to_datetime(data['Date'])
     st.sidebar.header("Menu")
     
-    # data = pd.read_csv('./../../../Data/Île-de-France_POLE EMPLOI.csv', sep=';')
+    # data = pd.read_csv('../Data/Île-de-France_POLE EMPLOI.csv', sep=';')
 
     selected_option = st.sidebar.selectbox("", ["Accueil", "Carte des agences", "Pourcentages des Etoiles" ,"Tableau de données", "Nombre d'avis positifs par ville /année", "Qualité de services par Ville","Taux des avis par ville", "Les Scores par ville","Entrainement du modèle NLP"])
 
@@ -127,7 +127,7 @@ def main():
 
 
 def load_data(nrows):
-    data = pd.read_csv('./../../../Data/csv/Île-de-France_POLE_EMPLOI_copie.csv', nrows=nrows, sep=';')
+    data = pd.read_csv('../Data/csv/Île-de-France_POLE_EMPLOI_copie.csv', nrows=nrows, sep=';')
     data['Date'] = pd.to_datetime(data['Date'])
     return data
 
