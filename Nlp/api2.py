@@ -19,7 +19,7 @@ def show_header():
     
     if st.button("Retour"):
         # Ouvrir l'URL de l'autre application Streamlit dans un nouvel onglet
-        other_app_url = "https://sylou2022-projet-entreaprise-2023-streamlitstreamlit-viz-77n3ql.streamlit.app/"  # Remplacez par l'URL de l'autre application Streamlit
+        other_app_url = "https://sylou2022-notre-projet-entreprise-streamlitstreamlit-viz-gum1ud.streamlit.app/"  # Remplacez par l'URL de l'autre application Streamlit
         webbrowser.open_new_tab(other_app_url)
 
 from diff import *

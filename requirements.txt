@@ -19,3 +19,4 @@ db==0.1.1
 process-data==0.3
 spacy==3.5.1
 tokenizers==0.13.3
+sentencepiece==0.1.99
