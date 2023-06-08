@@ -15,7 +15,7 @@ import webbrowser
 # Fonction pour afficher l'en-tête avec le logo
 def show_header():
     # st.image("../Data/Image/Logo.png", use_column_width=True)
-    # st.title("CLASSIFICATION D'AVIS")
+    st.title("CLASSIFICATION D'AVIS")
     
     if st.button("Retour"):
         # Ouvrir l'URL de l'autre application Streamlit dans un nouvel onglet
@@ -34,7 +34,7 @@ def select_file():
     uploaded_file = st.file_uploader("Choisissez un fichier CSV", type="csv")
     
     if uploaded_file is not None:
-        df = pd.read_csv(uploaded_file, sep=',')
+        df = pd.read_csv(uploaded_file, sep=';')
         df =filter_data(df)
         # Affichage des données sur une nouvelle page
         show_data(df.head(10))
